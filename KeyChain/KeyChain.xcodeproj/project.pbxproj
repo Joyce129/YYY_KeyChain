@@ -11,9 +11,7 @@
 		2F13118021B7CD140086C81B /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13117F21B7CD140086C81B /* UILabel+Extension.m */; };
 		2FCE218721B7CC09005643F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE218621B7CC09005643F6 /* AppDelegate.m */; };
 		2FCE218A21B7CC09005643F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE218921B7CC09005643F6 /* ViewController.m */; };
-		2FCE218D21B7CC09005643F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCE218B21B7CC09005643F6 /* Main.storyboard */; };
 		2FCE218F21B7CC0B005643F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCE218E21B7CC0B005643F6 /* Assets.xcassets */; };
-		2FCE219221B7CC0B005643F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCE219021B7CC0B005643F6 /* LaunchScreen.storyboard */; };
 		2FCE219521B7CC0B005643F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE219421B7CC0B005643F6 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -27,9 +25,7 @@
 		2FCE218621B7CC09005643F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2FCE218821B7CC09005643F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2FCE218921B7CC09005643F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2FCE218C21B7CC09005643F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FCE218E21B7CC0B005643F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2FCE219121B7CC0B005643F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FCE219321B7CC0B005643F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCE219421B7CC0B005643F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +50,15 @@
 			path = KeyChain;
 			sourceTree = "<group>";
 		};
+		2F13118121B7D0930086C81B /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				2F13117E21B7CD140086C81B /* UILabel+Extension.h */,
+				2F13117F21B7CD140086C81B /* UILabel+Extension.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		2FCE217921B7CC09005643F6 = {
 			isa = PBXGroup;
 			children = (
@@ -73,16 +78,13 @@
 		2FCE218421B7CC09005643F6 /* KeyChain */ = {
 			isa = PBXGroup;
 			children = (
-				2F13117E21B7CD140086C81B /* UILabel+Extension.h */,
-				2F13117F21B7CD140086C81B /* UILabel+Extension.m */,
+				2F13118121B7D0930086C81B /* UILabel */,
 				2F13117A21B7CD050086C81B /* KeyChain */,
 				2FCE218521B7CC09005643F6 /* AppDelegate.h */,
 				2FCE218621B7CC09005643F6 /* AppDelegate.m */,
 				2FCE218821B7CC09005643F6 /* ViewController.h */,
 				2FCE218921B7CC09005643F6 /* ViewController.m */,
-				2FCE218B21B7CC09005643F6 /* Main.storyboard */,
 				2FCE218E21B7CC0B005643F6 /* Assets.xcassets */,
-				2FCE219021B7CC0B005643F6 /* LaunchScreen.storyboard */,
 				2FCE219321B7CC0B005643F6 /* Info.plist */,
 				2FCE219421B7CC0B005643F6 /* main.m */,
 			);
@@ -146,9 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCE219221B7CC0B005643F6 /* LaunchScreen.storyboard in Resources */,
 				2FCE218F21B7CC0B005643F6 /* Assets.xcassets in Resources */,
-				2FCE218D21B7CC09005643F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,25 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2FCE218B21B7CC09005643F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2FCE218C21B7CC09005643F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2FCE219021B7CC0B005643F6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2FCE219121B7CC0B005643F6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2FCE219621B7CC0B005643F6 /* Debug */ = {
@@ -305,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K5FMWVMXX;
 				INFOPLIST_FILE = KeyChain/Info.plist;
@@ -323,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K5FMWVMXX;
 				INFOPLIST_FILE = KeyChain/Info.plist;
